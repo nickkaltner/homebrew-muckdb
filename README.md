@@ -1,7 +1,7 @@
 # homebrew-muckdb
 
-Homebrew tap for [muckdb](https://github.com/nickkaltner/muckdb) — a facade over
-the duckdb CLI with a live web view.
+Homebrew tap for [muckdb](https://github.com/nickkaltner/muckdb) — a live web view and history
+for your duckdb databases.
 
 ```sh
 brew install nickkaltner/muckdb/muckdb

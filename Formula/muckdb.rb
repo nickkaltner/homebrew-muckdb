@@ -1,5 +1,5 @@
 class Muckdb < Formula
-  desc "Facade over the duckdb CLI with a live web view"
+  desc "Live web view and history for your duckdb databases"
   homepage "https://github.com/nickkaltner/muckdb"
   version "0.1.1"
   license "MIT"
