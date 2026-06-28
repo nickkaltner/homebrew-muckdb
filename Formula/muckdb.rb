@@ -1,22 +1,22 @@
 class Muckdb < Formula
   desc "Live web view and history for your duckdb databases"
   homepage "https://github.com/nickkaltner/muckdb"
-  version "0.1.21"
+  version "0.1.22"
   license "MIT"
 
   depends_on "duckdb"
 
   on_macos do
     on_arm do
-      url "https://github.com/nickkaltner/muckdb/releases/download/v0.1.21/muckdb-0.1.21-aarch64-apple-darwin.tar.gz"
-      sha256 "8b11c08af3e04a4b2fd6a5385a3941bb11efa168c4c7204b7493b0c6f1104894"
+      url "https://github.com/nickkaltner/muckdb/releases/download/v0.1.22/muckdb-0.1.22-aarch64-apple-darwin.tar.gz"
+      sha256 "95039099f4cc9150019a46466e5a48796db4682c1dc82d9de3c78ffa3147fd12"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/nickkaltner/muckdb/releases/download/v0.1.21/muckdb-0.1.21-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5038ac2133b82d191ac0339c4d1dfab6dab24ace9ce2db8635c39ec85a71f670"
+      url "https://github.com/nickkaltner/muckdb/releases/download/v0.1.22/muckdb-0.1.22-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "af19466f4490f2050a9333fec35a90dbfe571a51056fd6fae431c23a4c962336"
     end
   end
 
@@ -29,7 +29,9 @@ class Muckdb < Formula
       muckdb ships a Claude Code skill that teaches coding agents how to drive it.
       To install it into your skills directory, run:
         muckdb skill install
-      It is written to ~/.claude/skills/muckdb/SKILL.md (re-run with --force to update).
+      It is written to ~/.claude/skills/muckdb/SKILL.md (--force to update).
+      Remove it again with:
+        muckdb skill uninstall
     EOS
   end
 
