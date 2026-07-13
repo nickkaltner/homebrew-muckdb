@@ -1,22 +1,22 @@
 class Muckdb < Formula
   desc "Live web view and history for your duckdb databases"
   homepage "https://github.com/nickkaltner/muckdb"
-  version "0.3.5"
+  version "0.4.0"
   license "MIT"
 
   depends_on "duckdb"
 
   on_macos do
     on_arm do
-      url "https://github.com/nickkaltner/muckdb/releases/download/v0.3.5/muckdb-0.3.5-aarch64-apple-darwin.tar.gz"
-      sha256 "0edcfec00ec909dba1766321c5469fcac816225640ecc45f1ccdadacc14c40ed"
+      url "https://github.com/nickkaltner/muckdb/releases/download/v0.4.0/muckdb-0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "5039e5feed0ab78341dcacd577a344c97a16f55f1665a8ac0cd95654a6be03e5"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/nickkaltner/muckdb/releases/download/v0.3.5/muckdb-0.3.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "79289712eb961266c5e206ba5080083e2a81b1250f74b10f74a8116e66ba9cd2"
+      url "https://github.com/nickkaltner/muckdb/releases/download/v0.4.0/muckdb-0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4262de83756c8abc52001d831c385d0bbf358136a843f49733c17fba76ea2e39"
     end
   end
 
@@ -26,13 +26,13 @@ class Muckdb < Formula
 
   def caveats
     <<~EOS
-      muckdb ships a Claude Code skill that teaches coding agents how to drive it.
+      muckdb ships an agent skill that teaches coding agents how to drive it.
 
       First time? Install it into your skills directory:
         muckdb skill install
 
       Upgrading muckdb? The bundled skill is updated too — refresh your copy so
-      agents get the latest guidance (this overwrites ~/.claude/skills/muckdb/SKILL.md):
+      agents get the latest guidance (this refreshes ~/.agents/skills/muckdb/SKILL.md):
         muckdb skill install --force
 
       Remove it again with:
