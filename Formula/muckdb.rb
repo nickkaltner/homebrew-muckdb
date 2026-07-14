@@ -1,22 +1,22 @@
 class Muckdb < Formula
   desc "Live web view and history for your duckdb databases"
   homepage "https://github.com/nickkaltner/muckdb"
-  version "0.4.2"
+  version "0.4.3"
   license "MIT"
 
   depends_on "duckdb"
 
   on_macos do
     on_arm do
-      url "https://github.com/nickkaltner/muckdb/releases/download/v0.4.2/muckdb-0.4.2-aarch64-apple-darwin.tar.gz"
-      sha256 "4b4112d3ff560ded6af1b96d2fb5956a2a8854cbee06b2827e27bc39715100b0"
+      url "https://github.com/nickkaltner/muckdb/releases/download/v0.4.3/muckdb-0.4.3-aarch64-apple-darwin.tar.gz"
+      sha256 "b446bbc62ed12221810a4493a876b8fd1962edb3dcac6095b088591b3aa95dd8"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/nickkaltner/muckdb/releases/download/v0.4.2/muckdb-0.4.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1fe96aaf09a8574b1f9efa089fafaa01ece6d854b4b9b19509df0da04c8e0efc"
+      url "https://github.com/nickkaltner/muckdb/releases/download/v0.4.3/muckdb-0.4.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f901afc95d86111edb1068aef2fccca488489acbcd9bd26528e95b68eaa46a73"
     end
   end
 
